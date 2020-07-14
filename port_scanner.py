@@ -18,7 +18,7 @@ def is_port_open(port):
 
 # scan all ports from 1 to 1025 and write open ports to file port_scanner_results.txt
 def scan_ports():
-    for x in range(130, 140):
+    for x in range(1, 1025):
         if is_port_open(x):
             file = open("port_scanner_results.txt", "a+")
             file.write("Port %s is OPEN\n" % (x))
